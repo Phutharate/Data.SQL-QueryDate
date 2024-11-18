@@ -24,6 +24,7 @@ namespace Data.SQL_QueryDate
             conn = new SqlConnection(strCon);
             conn.Open();
         }
+        //
 
         private void disconnect()
         {
