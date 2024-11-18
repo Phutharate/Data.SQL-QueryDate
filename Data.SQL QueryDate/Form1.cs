@@ -24,7 +24,7 @@ namespace Data.SQL_QueryDate
             conn = new SqlConnection(strCon);
             conn.Open();
         }
-        
+
 
         private void disconnect()
         {
@@ -37,7 +37,7 @@ namespace Data.SQL_QueryDate
         }
         private void showdata(string sql)
         {
-            
+
             da = new SqlDataAdapter(sql, conn);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -58,6 +58,10 @@ namespace Data.SQL_QueryDate
         {
             showdata("select * from Products");
         }
+
+
     }
+
+
 
 }
